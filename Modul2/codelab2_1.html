@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penjumlahan Sederhana</title>
+  </head>
+  <body>
+    <h1>Penjumlahan Sederhana</h1>
+    <p>Masukkan Jumlah Bilangan</p>
+    <input type="text" id="angka1" />
+    <input type="text" id="angka2" />
+    <button onclick="jumlah()">jumlah</button>
+    <p>hasil : <span id="hasil"></span></p>
+
+    <script>
+      function jumlah() {
+        var angka1 = document.getElementById("angka1").value;
+        var angka2 = document.getElementById("angka2").value;
+
+        angka1 = parseFloat(angka1);
+        angka2 = parseFloat(angka2);
+
+        var hasil = angka1 + angka2;
+
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>
